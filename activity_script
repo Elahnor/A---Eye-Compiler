@@ -1,0 +1,58 @@
+onboard
+    loyal pint loy = 2;
+    pint glo = 2;
+    pint arr = [1,2,3,4];
+
+    pint func(pint par) {
+        fire((par + 1) * 2);
+    }
+
+    captain(){
+        pint num = load("Enter num:");
+        pint numm = func(num);
+        pint exp = 1 + 2 / 2 - 3 * 4 // 2; 
+        fire(exp);
+        exp = exp % 2;
+        fire(exp);
+        
+        four(pint i = 2; i < num; i++){
+            fire(i);
+        }
+        
+        whale(num < 10){
+            fire("hello" * 2);
+            num++;
+        }
+        
+        helm (num){
+            chest 9: fire("air11");
+            chest 10: fire("fire");
+            chest 11: fire("earth");
+            dagger: fire("water");
+        }
+        
+        fire(arr);
+        fire(arr[0]);
+        
+        arr[1] = 6;
+        
+        fire(arr);
+        
+        fire(len(arr));
+        
+        theo(num < 20){
+            fire("less 20");
+        }
+        altheo(num == 20){
+            fire("is 20");
+        }
+        alt {
+            fire("over over");
+        }
+    }
+offboard
+
+
+
+
+

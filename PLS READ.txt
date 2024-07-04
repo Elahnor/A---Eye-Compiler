@@ -1,0 +1,18 @@
+Note:
+
+Font:
+1. Kindly install muna yung font sa device nyo para mag run yung font sa program
+
+Files:
+1. Create a folder and name it as A-Eye. 
+2. All files are need nasa the same folder kung nasa ang gui.py and lexer.py
+
+Requirements:
+1. Kindly install the following:
+a. pip install imageio
+b. pip install Pillow
+c. pip install moviepy
+
+Other Option For Requirement:
+1.Type nyo lang ito sa terminal
+pip install certifi==2023.11.17 charset-normalizer==3.3.2 colorama==0.4.6 decorator==4.4.2 distlib==0.3.8 filelock==3.13.1 idna==3.6 imageio==2.33.1 imageio-ffmpeg==0.4.9 moviepy==1.0.3 numpy==1.26.3 Pillow==9.5.0 platformdirs==4.1.0 proglog==0.1.10 psutil==5.9.8 pygame==2.5.2 requests==2.31.0 tk==0.1.0 tqdm==4.66.1 urllib3==2.1.0 virtualenv==20.25.0

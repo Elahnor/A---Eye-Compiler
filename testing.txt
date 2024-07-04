@@ -1,0 +1,74 @@
+onboard
+
+
+bull isOdd(pint n){
+    theo(n % 2 == 0){
+        home(usopp);
+    }
+    home(real);
+}
+
+captain(){
+    pint n = load("enter a number to see if odd: ");
+    theo(isOdd(n) == real){
+        fire(`{n}` is odd!);
+    }alt{
+        fire(`{n} is even!`);
+    }
+
+}
+
+offboard
+
+
+
+
+
+
+
+
+
+
+
+
+1
+4
+120
+121
+32
+5
+6
+28
+6
+5
+14
+126
+94
+95
+126
+14
+5
+24
+
+122
+35
+36
+
+Revision:
+
+CFG:
+2. Global na math statement
+
+System:
+1. Fix ==, iba yung token nya
+2. Fix Function
+3. More on, theo, altheo and real with real, usopp may need ifix
+
+-------------------------------------------------------------------------
+
+Task To Do: 
+
+- Ayusin CFG lalo na sa global declaration -- global math
+- First set and follow set ayusin din
+- Predict set mahalagang ayusin
+- Yung test script magpasa muna ng 250 then test tayo ulit sa mga susunod na araw.

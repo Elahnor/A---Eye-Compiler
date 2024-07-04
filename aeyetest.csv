@@ -1,0 +1,1905 @@
+test_item,expected,actual,remarks,detailed error if meron,,
+"onboard   
+         theo(Real)
+offboard",Syntax Error,,,,,
+"onboard
+         theo(Usopp)
+offboard",Syntax Error,,,,,
+"onboard
+        theo(fire)
+offboard",Syntax Error,,,,,
+"onboard
+         theo(load)
+offboard",Syntax Error,,,,,
+"onboard 
+          theo(1+5)
+offboard",Syntax Error,,,,,
+"onboard
+          theo(10-2)
+offboard",Syntax Error,,,,,
+"onboard
+           theo(10//3)
+offboard",Syntax Error,,,,,
+"onboard
+          theo(4*7)
+offboard",Syntax Error,,,,,
+"onboard
+          theo(theo)
+offboard",Syntax Error,,,,,
+"onboard
+          theo(altheo)
+offboard",Syntax Error,,,,,
+"onboard
+          theo(alt)
+offboard",Syntax Error,,,,,
+"onboard
+           theo(helm)
+offboard",Syntax Error,,,,,
+"onboard
+           theo(whale)
+offboard",Syntax Error,,,,,
+"onboard
+   captain(){
+   fire(""hello world!"");
+}
+offboard",No Syntax Error,,,,,
+"onboard
+     captain(){
+     fire(""Happy Birthday"");
+}
+offboard",No Syntax Error,,,,,
+"onboard
+    captain(){
+    fire(9 + ""Lucky"");
+}
+offboard",No Syntax Error,,,,,
+"onboard
+            theo(four)
+offboard",Syntax Error,,,,,
+"onboard 
+            theo(a>5)
+offboard",Syntax Error,,,,,
+"onboard
+captain(){
+pint a = 5;
+             theo(5<2){
+             fire(""Nice"");
+}
+}
+offboard",No Syntax Error,,,,,
+"onboard 
+             captain(){
+             theo(3==3)
+             }
+offboard",Syntax Error,,,,,
+"onboard 
+             theo(a != b)
+offboard",Syntax Error,,,,,
+"onboard 
+             captain(){
+             theo(5<=5)
+             }
+offboard",Syntax Error,,,,,
+"onboard
+pint a = ;
+offboard",Syntax Error,,,,,
+"onboard 
+             captain(){
+             theo(10>=9)
+             }
+offboard",Syntax Error,,,,,
+"onboard
+   pint a = 1;
+   captain(){
+   whale(1==1){
+     theo(a == 5){
+          leak;
+}
+
+    a++;
+}
+}
+offboard",No Syntax Error,,,,,
+"onboard 
+           altheo(a==2):
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        theo (a==2){}
+        altheo (a==2){}
+        }
+offboard",No Syntax Error,,,,,
+"onboard 
+           altheo(c==7);
+offboard",Syntax Error,,,,,
+"onboard
+captain(){
+   theo (5 > a){
+      fire(""5 is greater than a"");
+} altheo (5 < a) {
+      fire(""5 is less than a"");
+}
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain(){
+   altheo(5==5){
+     fire(""not wow"")
+} theo(2==1){
+    fire(""Amazing"")
+}
+}",Syntax Error,,,,,
+"onboard
+captain(){
+theo (7 < a){
+   fire(“5 is less than a”)
+} altheo (5 <= a) {
+   fire(“5 is less than equal to a”);
+} alt {
+   fire(“a is equal to 5 ”);
+}
+}
+offboard",Syntax Error,,,,,
+"onboard
+     doffy = load(enter number);
+offboard",Syntax Error,,,,,
+"onboard
+pint loyal = 5;
+offboard",Syntax Error,,,,,
+"onboard
+capatain() {
+        pint a = 2 + = ;    
+}
+offboard",Syntax Error,,,,,
+"onboard
+       pint a  = ;
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        pint a = 3500;
+        }
+offboardoffboard",Syntax Error,,,,,
+"onboard
+       pint a = { }
+offboard",Syntax Error,,,,,
+"onboard
+       pint []
+offboard",Syntax Error,,,,,
+"onboard
+   doffy name = ""Karl"";
+   captain(){
+   for(pint i = 0; i < len(name); i++){
+     fire(name[i]);
+}
+}
+offboard",Syntax Error,,,,,
+"onboard
+   doffy name = ""Karl"";
+   captain(){
+   four(pint i = 0; i < len(name); i++){
+     fire(name[i]);
+}
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain(){
+pint day = 3;
+
+helm(day){
+   chest 1:  fire(""Monday"") ; leak;
+   chest 2:  fire(""Tuesday"") ; leak;
+   chest 3:  fire(""Wednesday"") ; leak;
+   chest 4:  fire(""Thursday""); leak;
+   chest 5:  fire(""Friday""); leak;
+   chest 6:  fire(""Saturday""); leak;
+   chest 7:  fire(""Sunday"");
+  
+ dagger:  fire(""Not a day"");
+}
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain(){
+pint month = 5;
+
+helm(month){
+   chest 1:  fire(""January"") ; leak;
+   chest 2:  fire(""February"") ; leak;
+   chest 3:  fire(""March"") ; leak;
+   chest 4:  fire(""April""); leak;
+   chest 5:  fire(""May""); leak;
+   chest 6:  fire(""June""); leak;
+   chest 7:  fire(""July""); leak;
+   chest 8:  fire(""August""); leak;
+   chest 9:  fire(""September""); leak;
+   chest 10:  fire(""October""); leak;
+   chest 11:  fire(""November""); leak;
+   chest 12:  fire(""December"");leak;
+  
+ dagger:  fire(""Error"");
+}
+}
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+       doffy math = + ;
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+       doffy math = ""Plus"";
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+       fleet x = """";
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+       }
+offboard",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  a = [""A"", ""B"", ""C""] + n = [""D"", ""E""];
+         }
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                  doffy rainbow = [""Red"", ""Blue"", ""Yellow""];
+         }
+offboard",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  num = [1. 2. 3, 4.];
+         }
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                  doffy boom = [""hello"", 'hi', whats_up];
+         }
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                  load(input your answer: );
+         }
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                  pint samp_array = [1, 2, 3, 66];
+         }
+offboard",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  doffy charots = [""A"", ""Hello"", ""24""];
+         }
+offboard",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  bull boolVal = real;
+         }
+offboard",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  bull trula = Real; 
+         }
+offboard",No Syntax Error,,,,,
+"onboard 
+         captain() {
+                  True = real;
+         }
+offboard",No Syntax Error,,,,,
+"onboard 
+         captain() {
+                  bull falseVal = usopp;
+         }
+offboard",No Syntax Error,,,,,
+"onboard          
+         captain() {
+                  bull falseVal = Usopp;
+         }
+offboard",No Syntax Error,,,,,
+"onboard 
+         captain() {
+                  pint sumNum(pint numA, pint numB) {
+                           home (numA + numB);
+                  }
+         }
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                  doffy firstName = ""Jacob"";
+                  doffy lastName = ""Dela Cruz"";
+         }
+offboard",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  fire(this_is_error);
+         }
+offboard",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  fire(""Print me!"");
+         }
+offboard",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  doffy Shirley == real;
+         }
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                  fire(""You forgot the semicolon :("")
+         }
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                  pint sum10 = 8+2;
+                  fire(sum10);
+         }
+offboard",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  pint sumNegatives = 5 + -55;
+                  fire(sumNegatives);
+        } 
+offboard",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  doffy wrongDeclaration; 
+         }
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                  fire(""You forgot to close the captain()!!"");
+offboard",Syntax Error,,,,,
+"onboard
+captain(){
+doffy block = 3;
+
+helm(block){
+   chest 1:  fire(""You are block 1"") ; leak;
+   chest 2:  fire(""You are block 2"") ; leak;
+   chest 3:  fire(""You are block 3"") ; leak;
+   
+  
+ dagger:  fire(""""Not enrolled"""");
+}
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain(){
+doffy color = ""Yellow"";
+
+helm(color){
+   chest ""Green"":  fire(""Go"") ; leak;
+   chest ""Yellow"":  fire(""Ready"") ; leak;
+   chest ""Red"" fire(""Stop"") ; leak;
+   
+  
+ dagger:  fire(""Error"");
+}
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain(){
+pint grade = 1;
+
+helm(grade){
+   chest 1:  fire(""Ace"") ; leak;
+   chest 1.25:  fire(""Very Good"") ; leak;
+   chest 1.5: fire(""Good"") ; leak;
+   chest 1.75: fire(""Nice"") ; leak;
+   chest 2: fire(""Not Bad"") ; leak;
+   chest 3: fire(""Pass"") ; leak;
+   chest 5: fire(""Failed"") ; leak;
+  
+ dagger:  fire(""Error"";
+}
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain(){
+pint grade = 1;
+
+helm(grade){
+   chest 1:  fire(""Ace"") ; leak;
+   chest 1.25:  fire(""Very Good"""") ; leak;
+   chest 1.5: fire(""Good"") ; leak;
+   chest 1.75: fire(""Nice"") ; leak;
+   chest 2: fire(""Not Bad"") ; leak;
+   chest 3: fire(""Pass"") ; leak;
+   chest 5: fire(""Failed"") ; leak;
+  
+ dagger:  fire(""Error"";
+}
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain(){
+doffy program = ""CS"";
+
+helm(color){
+   chest ""IT"":  fire(""Information Technology"") ; leak;
+   chest ""CpE"":  fire(""Computer Engineering"") ; leak;
+   chest ""CS"" fire(""Computer Science"")  leak;
+   
+  
+ dagger:  fire(""Error"");
+}
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain() {
+pint a = 10;
+theo(x > 7 and x ){}
+}
+offboard",Syntax Error,,,,,
+"onboard
+capatain() {
+pint a = 10;
+theo(x > 7){}
+}
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                 bull mabaho == real;
+                 bull hindi_naman == usopp;
+         }
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                  doffy greet1 = ""Kamsami!"";
+                  doffy greet2 = ""Arigathanks!"";
+offboard",Syntax Error,,,,,
+"onboard
+         captain() {
+                  doffy greet1 = ""Kamsami!"";
+                  doffy greet2 = ""Arigathanks!"";
+                  load(""may laman"");
+}
+offboard
+",No Syntax Error,,,,,
+"onboard
+         captain() {
+                  fleet decPointErr = (-5.55);
+         }
+offboard",Syntax Error,,,,,
+"onboard
+	captain(){
+	loyal doffy name = ""John"";
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	doffy name = ""Luffy"";
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        fire(real or 123);
+        }
+offboard",Syntax Error,,,,,
+"onboard
+	captain(){
+	doffy name = ""John"";
+	fire(`the user’s name is {name}`);
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	doffy name = ""John"";
+	fire(""the user’s name is {name}"");
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        pint a = [1,2,3,4,5];
+        fire(len(a));
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        doffy name = ""John"";
+        fire( len(name) );
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	four (pint i = 0; i < 5; i++) {
+	}
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+    captain(){
+        pint x = 10; 
+        theo (x>7 and x<15){
+        }
+    }
+offboard",No Syntax Error,,,,,
+"onboard
+    captain(){
+        pint x = 10; 
+        theo (x == 12 oro x == 10 ) {
+        }
+    }
+offboard",No Syntax Error,,,,,
+"onboard
+    captain(){
+        fleet x = 10.5, y = 15.5;
+        theo (nay (x == y)) {
+        }
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        doffy b = [""Blue:"", ""Red"", ""Green""];
+        captain(){
+            }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+                doffy b = [""Violet"", ""Pink"", ""Yellow""];
+            }
+offboard",No Syntax Error,,,,,
+"onboard
+        doffy b = [""Blue:"", ""Red"", ""Green""];
+        captain(){
+                doffy b = [""Violet"", ""Pink"", ""Yellow""];
+            }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        pint c = [1, 2, 3];
+            }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        fire(5 + ""Seven"");
+            }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        fire(5 + 7);
+            }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        fire(5<=4);
+            }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        fire(7.3);
+            }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        fire(""yow"" + // );
+            }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        fire(45 - ++ );
+            }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        doffy myName = ""tris"";
+        fire(""User's Name: {myName}"");
+            }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        doffy = ""tris"";
+        fire(""User's Name: {myName}"");
+            }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        myName = ""tris"";
+        fire(""User's Name: {myName}"");
+            }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        doffy @+// = ""tris"";
+        fire(""User's Name: {myName}"");
+            }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        pint num =  28;
+        fire(num + 2);
+            }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        pint num = load(""Choose a number from 1-3: "");
+
+        helm(num){
+        chest 1: fire(""One""); leak;
+        chest 2: fire(""Two""); leak;
+        chest 3: fire(""Three""); leak;
+        dagger: fire(""Choose a number again..."");
+        }
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        pint num = load(""Choose a number from 1-3: "");
+
+        helm(num){
+        chest 1: fire(""One""); leak;
+        chest 2: fire(""Two""); leak;
+        chest 3: fire(""Three""); leak;
+        }
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        pint num = load(""Choose a number from 1-3: "");
+
+        helm(){
+        chest 1: fire(""One""); leak;
+        chest 2: fire(""Two""); leak;
+        chest 3: fire(""Three""); leak;
+        dagger: fire(""Choose a number again..."");
+        }
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        pint num = load(""Choose a number from 1-3: "");
+
+        helm(num){
+        chest : fire(""One""); leak;
+        chest : fire(""Two""); leak;
+        chest : fire(""Three""); leak;
+        dagger: fire(""Choose a number again..."");
+        }
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        pint time = 42;
+
+        theo (time < 20) {
+            fire(""Nahhh"");
+        } altheo (time < 30) {
+            fire(""Naurrr"");
+        } alt {
+            fire(""Yeahhh"");
+        }
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        pint time = 42;
+
+        altheo (time < 30) {
+            fire(""Naurrr"");
+        } alt {
+            fire(""Yeahhh"");
+        }
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        pint time = 42;
+
+        alt {
+            fire(""Yeahhh"");
+        }
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        pint time = 42;
+
+        theo (time  20) {
+            fire(""Nahhh"");
+        } altheo (time  30) {
+            fire(""Naurrr"");
+        } alt {
+            fire(""Yeahhh"");
+        }
+        }
+offboard",Syntax Error,,,,,
+"Onboard
+  doffy concatenateIntegers() {
+    pint num1 = load(""Enter first integer: "");
+    pint num2 = load(""Enter second integer: "");
+    fire(""Concatenated Integers: "");
+    fire(num1);
+    fire(num2);
+  }
+
+  captain() {
+    concatenateIntegers();
+  }
+Offboard",Syntax Error,,,,,
+"onboard
+
+     captain() {
+           concatIntegers();
+     }
+
+doffy concatIntegers() {
+    pint num1 = load(""Enter first integer: "");
+    pint num2 = load(""Enter second integer: "");
+    fire(""Concatenated Integers: "");
+    fire(num1);
+    fire(num2);
+  }
+offboard",Syntax Error,,,,,
+"onboard
+	captain(){
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	pint Chest1 = 10; 
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	pint Chest1 = 11; 
+	captain(){ 
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	fleet pi = 3.14;
+	captain(){
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	fleet cylinder = 12.56;
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	doffy silver = ""Ag"";
+	captain(){
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	doffy gold = ""AU"";
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	bull cow = real;
+	captain(){
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	bull sheep = usopp;
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	bull horse = real <> usopp;
+	}
+offboard",Syntax Error,,,,,
+"onboard
+	captain(){
+	loyal pint taylor = 21;
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	loyal pint swift = 22;
+	captain(){
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	loyal doffy rihanna = ""Royal""
+	captain(){
+	}
+offboard",Syntax Error,,,,,
+"onboard
+        loyal doffy rihanna = ""Royal"";
+        captain(){
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	loyal doffy rihanna = ""Diamond"";
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        loyal fleet pi = 3.14159265;
+        }
+offboard",Syntax Error,,,,,
+"onboard
+	captain(){
+	loyal fleet pi = 3.1415;
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	loyal fleet pi = 3.14159
+	captain(){
+	}
+offboard
+",Syntax Error,,,,,
+"onboard
+        loyal bull bteam = real;
+        captain(){
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	loyal bull vbteam = ""usopp"";
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	loyal bull vbteam = ""usopp`;
+	}
+offboard",Syntax Error,,,,,
+"onboard
+	captain(){
+	loyal doffy rihanna = `Umbrella`;
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	loyal doffy rihanna = S&M;
+	}
+offboard",Syntax Error,,,,,
+"onboard
+	loyal doffy rihanna = ""RudeBoy`;
+	captain(){
+	}
+offboard",Syntax Error,,,,,
+"onboard
+	loyal
+	captain(){
+	}
+offboard",Syntax Error,,,,,
+"onboard
+	loyal captain(){
+	}
+offboard
+",Syntax Error,,,,,
+"onboard
+        captain() {
+                four(pint x = 0; x < 5; x++) {
+                        fire(x+1);
+                }
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+                pint x = 0;
+                whale(x > 1) {
+                        fire(""Hello"");
+                }
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+                x = 10;
+                whale(pint x > 1) {
+                        fire(""Hello"");
+                        x--;
+                }
+        }
+offboard",Syntax Error,,,,,
+"onboard 
+        captain() {
+                four(pint x; x != 5; ++x){ #<statement>; }
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                theo(real) {
+                        fire(""True"");
+                }
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+                doffy alphabets = [[a, b, c, d, e, f, g]]];
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                load(fire(""Insert values"" ));
+        }
+offboard",Syntax Error,,,,,
+"onboard 
+        captain() {
+                fire(dont_try_this + 6667);
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+                pint fire = 2; 
+        }
+offboard",Syntax Error,,,,,
+"onboard 
+        captain() {
+                pint %money = 5.55%;
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                fleet decNum = 6.66; 
+                four (pint x = 1; x < decNum; x++) {
+                }
+        }
+offboard",No Syntax Error,,,,,
+"onboard 
+        captain() {
+                doffy stringCatcher(doffy str) {
+                        doffy x = str;
+                        home(bool flag = real;);
+                }",Syntax Error,,,,,
+"onboard
+        captain() {
+                fleet decNum = 6.66; 
+                four (pint x = 1; x < decNum; x++) {
+                }
+        }
+offboard",No Syntax Error,,,,,
+"onboard 
+        captain() {
+                pint wrongVarType = ""Enter Anything: "";
+                load(wrongVarType);
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        pint main(doffy str) {
+                home(0);
+        }
+
+        captain() {
+        }
+offboard",No Syntax Error,,,,,
+"onboard 
+        captain() {
+                fire(""Don't forget to close!!"");
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                fire(""You don't like semicolons, do you?);
+        };
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                pint selected = 0;
+
+                helm(selected) {
+                        chest 0: fire(""None Selected""); leak;
+                        chest 1: fire(""Item selected""); leak;
+                        dagger: fire(""Error!""); 
+                }
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain () {
+                doffy str = ""Don't forget to break"";
+                
+                helm(real) {
+                        chest 1: fire(""1"");
+                        chest 2: fire(""2"");
+                        dagger: fire(""Dagger is required"");
+                }
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                doffy count_me = [""1"", ""5"", ""3"", ""55""];
+                fire(len(count_me));
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain () {
+                fire(fire(fire(fire(fire())));
+        }
+offboard",Syntax Error,,,,,
+"onboard 
+        captain() {
+                doffy str !== ""5""5```5"""";   
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                pint errorNum = five, ten, fifteen, one;
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                pint intNum = 5; 
+                pint notIntNum != ""!1111```66""++;
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                onboard
+                offboard
+        }
+offboard",Syntax Error,,,,,
+"onboard 
+        captain() {
+                captain();
+                captain();
+                captain();
+        }
+offboard",Syntax Error,,,,,
+"onboard 
+        captain() {}
+                captain();
+                captain();
+                captain();
+offboard",Syntax Error,,,,,
+"onboard
+        captain {
+                fire(""You might forgot something?"");
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captaiin() {
+                fire('''haha, good luck debugging m3""''`);
+        }};
+oofboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                fire(""I love python!"")
+                        fire(""you surely love python"")
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                fire(""I love python!"")
+                        fire(""you surely love python"");
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                fire(""I love python!"");
+                        fire(""you surely love python"");
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+                doffy name = ""Ponkie"";
+                pint age = 2;
+                fire(name + "" loves python so much, 
+                even he's only "" + doffy(age);
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                theo(real) {
+                        fire(""It's real!"");   
+                } alt { fire(""It's not real); }
+offboard",Syntax Error,,,,,
+"onboard
+         captain(){
+                   pint num = 10;
+
+                  theo (num > 0) {
+                          fire(""Positive"");
+                 }altheo (num ==0){
+                         fire(""Zero"")
+                 }alt{
+                        fire(""Negative""):
+                 }
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+                  pint num = 7;
+                  theo (num % 2 == 0) {
+                       fire(""Even"");
+                  }alt{
+                       fire(""Odd"");
+                  }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+                 pint num = 10, num2 = 20, num3 = 15
+
+                 theo ((num1 >= num2) and (num1 >= num3)) {
+                         fire(`Largest number: {num}`);
+                 }altheo ((num2 >= num1) and (num2 >= num3)){
+                         fire(`Largest number: {num2}`);
+                 }alt{
+                        fire(`Largest number: {num3}`);
+                 }
+offboard",Syntax Error,,,,,
+"onboard 
+         captain(){ 
+                  pint year = 2024;
+
+                  altheo ((year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)) { 
+                      fire(""Leap Year""); 
+                  }alt{ 
+                       fire(""Not a Leap Year"");
+                       }
+offboard",Syntax Error,,,,,
+"onboard 
+          captain(){ 
+                   pint a = 3, b = 4. c = 5;
+
+                   theo (a == b and b == c) { 
+                        fire(""Equilateral triangle""); 
+                   }altheo (a == b oro b == c oro c == a){ 
+                        fire(""Isosceles Triangle""); 
+                   }alt{ fire(""Scalene Triangle""); 
+                   } 
+offboard",Syntax Error,,,,,
+"onboard 
+          captain(){ 
+                   pint year = 2000;
+                   theo (year % 100 == 0) { 
+                        fire(""Century Year""); 
+                   }alt{ 
+                        fire(""Not a century year""); 
+                   } 
+}
+offboard",No Syntax Error,,,,,
+"onboard 
+          captain(){ 
+                   pint num = 12;
+
+                   theo ((num % 2 == 0) and (num % 3 == 0)) { 
+                        fire(""Divisible by both 2 and 3); 
+                   }alt{ 
+                        fire(""Not divisible by both 2 and 3""); 
+                   } 
+offboard",Syntax Error,,,,,
+"onboard 
+          captain(){ 
+                   pint num = 6;
+
+                   theo ((num != 0) and (num & (num - 1))) == 0 [ 
+                        fire(""Power of two""); 
+                   }alt{ 
+                       fire(""Not a power of two""); 
+                   } 
+offboard",Syntax Error,,,,,
+"onboard 
+          captain(){ 
+                   pint num = 6; pint num2 = 15;
+
+                   theo (num1 > num2) {
+                        fire(`Greater Number: {num}`); 
+                   }alt{ 
+                       fire(`Greater Number: {num2}`); 
+                   } 
+	}
+offboard",No Syntax Error,,,,,
+"onboard 
+          captain(){ 
+                   pint num = 9;
+
+                   theo (num % 3 ==0;) {
+                        fire(""Divisible by 3""); 
+                  
+offboard",Syntax Error,,,,,
+"onboard 
+          captain(){ 
+                   pint a = 17;
+                   theo (10) < num < (20) {
+                        fire(""Number is between 10 and 20""); 
+		}		         
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+                theo(Usoppl) {
+                        fire(""False"");
+                }
+        }
+offboard",Syntax Error,,,,,
+"onboard 
+         captain(){ 
+                  pint age = 20;
+                  theo (age >= 18) { 
+                      fire(""You are eligible to vote""); 
+                  }alt{ 
+                       fire(""Not eligible to vote"");
+                       }
+	}
+offboard",No Syntax Error,,,,,
+"onboard 
+         captain(){ 
+                  pint age = 65;
+
+                  theo (age >= 60) { 
+                      fire(""You are senior citizen""); 
+                  }alt{ 
+                       fire(""Not a senior citizen"");
+                       }
+	}
+offboard",No Syntax Error,,,,,
+"onboard 
+         captain(){ 
+                  doffy color = ""Red"";
+
+                  theo (color == ""red`) { 
+                      fire(""The color is Red""); 
+                  }alt{ 
+                       fire(""Not a color red"");
+                       }
+offboard",Syntax Error,,,,,
+"onboard 
+         captain(){ 
+               helm(day){
+   chest 1:  fire(”Monday”) ; leak;
+   chest 2:  fire(”Tuesday”) ; leak;
+   chest 3:  fire(”Wednesday”) ; leak;
+   chest 4:  fire(”Thursday”); leak;
+   chest 5:  fire(“Friday”); leak;
+   chest 6:  fire(”Saturday”); leak;
+   chest 7:  fire(“Sunday”);
+  
+ dagger:  fire(”Not a day”);
+   
+offboard",Syntax Error,,,,,
+"onboard 
+         captain(){ 
+               helm(day)[]
+   chest 1:  fire(”Monday”) ; leak;
+   chest 2:  fire(”Tuesday”) ; leak;
+   chest 3:  fire(”Wednesday”) ; leak;
+  
+ dagger:  fire(”Not a day”);
+   
+offboard",Syntax Error,,,,,
+"onboard 
+         captain(){ 
+
+    chest 1:  fire(”Monday”) ; leak;
+   chest 2:  fire(”Tuesday”) ; leak;
+   chest 3:  fire(”Wednesday”) ; leak;
+    helm(day){}
+   
+  
+ dagger:  fire(”Not a day”);
+   
+offboard",Syntax Error,,,,,
+"onboard 
+       captain()
+       fleet a = fire(pint a);
+offboard",Syntax Error,,,,,
+"onboard 
+         captain(){ 
+         pint num = 2 fleet b = 13.4 doffy c = ""ace""l
+
+offboard",Syntax Error,,,,,
+"onboard 
+         captain(){ 
+         pint num = 2 fleet b = 13.4 doffy c = ""ace""
+
+offboard",Syntax Error,,,,,
+"onboard 
+         captain(){ 
+        four (pint i = 0; i < 5; i+++) {
+
+}
+
+offboard",Syntax Error,,,,,
+"onboard
+          captain(){
+                 pint x = 10, y = 15;
+                 theo (nay (x == y)) {
+                    fire(""True"");
+}
+}
+offboard",No Syntax Error,,,,,
+"onboard
+          captain(){
+                 pint c = [1, 2. ""3:];
+}
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+            pint x = 10;
+            pint y = 5;
+            pint result = x + y;  
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+            pint x = 10;
+            pint y = 5;
+            pint result;  
+        }
+offboard",Syntax Error,,,,,
+"onboard
+captain() {
+    pint attempts = 0;
+    whale (attempts < 3) {  
+        pint attempts = attempts + 1;
+        fire(attempts);  
+    }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    whale (attempts < 3) {  
+        four attempts = attempts + 1;
+        fire(attempts);  
+    }
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain() {
+    pint x = 5;
+    pint y = 8;
+    theo (x < y) {  
+        fire(""x is less than y"");  
+    } alt {
+        fire(""x is greater than or equal to y""); 
+    }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint x = 5;
+    pint y = 8;
+    theo (x < y) {  
+        fire(""x is less than y"");  
+	}
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint x = 10;
+    pint y = 20;
+    pint z = x * y;  
+    fire(z);  
+}
+offboard
+",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint x = 10;
+    pint y = 20;
+    pint z = x * y;  
+    fire(""The product of x and y is: "" + z);  
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint count = 0;
+    pint count2 = 3;
+    whale (count < 5) {  
+	pint count = pint count + pint count2;
+        fire(""Loop iteration: "" , pint count); 
+    }
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain() {
+    pint temperature = 25;
+    theo (temperature > 30) {  
+        fire(""It's hot outside!"");  
+    } alt {
+        fire(""It's a pleasant day."");  
+    }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint radius = 5;
+    loyal double area = 3.14 * radius * radius;  
+    fire(""The area of the circle is: "" + area);  
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain() {
+    loyal pint pi = 3.14;
+    pint radius = 5;
+    pint area = radius * pi;  
+    fire(area);  
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint a = 10;
+    pint b = 20;
+    theo (a==10){
+	fire(""a is10"");
+	}
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint a = 10;
+    pint b = 20;
+    theo (a==10){
+	fire(""a is 10"");
+	} altheo (a==20){
+	fire(""a is 20"");
+	} alt {
+	fire(""a is 30"");
+	} 
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    int x = 15;
+    int y = 10;
+    theo (x > y) { 
+        fire(""x is greater than y"");  
+    } alt {
+        fire(""x is not greater than y"");  
+    }
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain() {
+    pint x = 15;
+    pint y = 10;
+    theo (x > y) { 
+        fire(""x is greater than y"");  
+    } alt {
+        fire(""x is not greater than y"");  
+    }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint temperature = 25;
+    theo (temperature > 30) {  
+        fire(""It's hot outside!"");  
+    } altheo (temperature < 10) {
+        fire(""It's cold outside!"");  
+    } alt {
+        fire(""The weather is moderate."");  
+    }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    int x = 10;
+    int y = 20;
+    int result = x + y;  
+    if (result == 30) {
+        print(""The result is 30"");  
+    } else {
+        print(""The result is not 30"");  
+    }
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain() {
+    pint x = 10;
+    pint y = 20;
+    pint result = x + y;  
+    theo (result == 30) {
+        fire(""The result is 30"");  
+    } alt {
+        fire(""The result is not 30"");  
+    }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint num1 = 10;
+    pint num2 = 15;
+    theo (num1 < num2) {  
+        fire(""num1 is less than num2"");  
+    } alt {
+        fire(""num1 is greater than or equal to num2"");  
+    }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint x = 10;
+    pint y = 20;
+    theo (x != y) {  
+        (""x is not equal to y""); 
+    } alt {
+        (""x is equal to y"");  
+    }
+}
+offboard",Syntax Error,,,,,
+"onboard
+captain() {
+    pint x = 10;
+    pint y = 20;
+    theo (x != y) {  
+        fire(""x is not equal to y""); 
+    } alt {
+        fire(""x is equal to y"");  
+    }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint age = 25;
+    theo (age >= 18) {  
+        fire(""You are an adult."");  
+    } alt {
+        fire(""You are not an adult."");  
+    }
+    sail;
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint age = 25;
+    theo (age >= 18) {  
+        fire(""You are an adult."");  
+    } alt {
+        fire(""You are not an adult."");  
+    }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint temperature = 25;
+    helm (temperature) {
+        chest 15:fire(""Temperature is cold."");          
+        chest 25: fire(""Temperature is warm."");  
+        chest 35: fire(""Temperature is hot."");  
+        dagger: fire(""Unknown temperature."");  
+    }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+captain() {
+    pint temp = 25;
+    helm (temp) {
+        chest 15: ;          
+        dagger: 
+    }
+}
+offboard",Syntax Error,,,,,
+"onboard
+offboard
+captain(){
+}",Syntax Error,,,,,
+"captain(){
+}
+onboard
+offboard",Syntax Error,,,,,
+"onboard
+captain(){
+}
+pint a=1;
+pint b=2;
+offboard",Syntax Error,,,,,
+"onboard
+	sail;
+offboard",Syntax Error,,,,,
+"onboard
+	pass ;
+offboard",Syntax Error,,,,,
+"onboard
+	captain(){
+	theo()
+	}
+offboard",Syntax Error,,,,,
+"onboard
+	captain(){
+	alt[]
+	}
+offboard",Syntax Error,,,,,
+"onboard
+	captain(){
+	pint doffy = loyal;
+	}
+offboard",Syntax Error,,,,,
+"onboard
+	captain(){
+	loyal pint doffy fleet = av12.5;
+	}
+offboard",Syntax Error,,,,,
+"onboard
+        captain(){
+        pint silver = 5; pint bronze = 7; pint gold = 15;
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+	captain(){
+	pint silver = 5; 
+	fleet bronze = 1.25; 
+	doffy treasure = ""gold"";
+	bull platinum = real;
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        doffy shape = square;
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        pint population = ""9"";
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        ## bruh
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+        # owyes
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+        fleet mcflurry = ""95.25"",
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+        pint rect = 34;
+        fire(rect);
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+        pint tri = [4, 5, ""six""]
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+        doffy = ""## true"";
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+        fleet water = 17.5;
+        (water);
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+        return;
+        }
+offboard",Syntax Error,,,,,
+"onboard
+        captain() {
+        doffy Bops = [""Nothing"", ""Mary Whiton Calkins"", ""See Stars""];
+        fire(Bops);
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+        doffy APAQueen = [""Mary"", ""Whiton"", ""Calkins""];
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+        doffy RomanNum = [""I"", ""II"", ""III"", ""IIII"", ""IIIII"", ""IIIIII"", ""IIIIIIII""];
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+        pint zodiac = 69;
+        helm(zodiac) {
+                chest 1: fire(""Aquarius""); leak;
+                chest 2: fire(""Pisces""); leak;
+                chest 3: fire(""Aries""); leak;
+                chest 4: fire(""Taurus""); leak;
+                chest 5: fire(""Gemini""); leak;
+                chest 6: fire(""Cancer""); leak;
+                chest 7: fire(""Leo""); leak;
+                chest 8: fire(""Virgo""); leak;
+                chest 9: fire(""Libra""); leak;
+                chest 10: fire(""Scorpio""); leak;
+                chest 11: fire(""Sagittarius""); leak;
+                chest 12: fire(""Capricorn""); leak;
+        dagger: fire(""Error"");
+        }        
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+        # I want
+        multi-line comment
+        SYNTAX ERROR dapat, pero sa autotester cinocompile to one line
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+        captain() {
+        fire(""Is It
+        Over Now?"");
+        }
+offboard",No Syntax Error,,,,,
+"onboard
+pint z(pint a){
+                fire(""Hello"");
+        }
+        captain(){
+        pint x = 10;
+        pint y = 15;
+        }
+        
+offboard ",No Syntax Error,,,,,
+"onboard
+	captain(){
+	pint x = 10; loyal fleet y = 15.5;
+	}
+offboard",No Syntax Error,,,,,
+"onboard
+        captain(){
+        pint x = 10; loyal fleet y = 15.5, z = 23.456;
+        }
+offboard",Syntax Error,,,,,
+"onboard
+   captain(){
+      doffy name = load(""enter your name"");
+      doffy greeting = ""Hello "" + name;
+}
+offboard",No Syntax Error,,,,,1
+"onboard
+
+pint sumTwo(pint a, pint b){
+     home(1 + 2);
+}
+   captain(){
+      pint sum = sumTwo(1,2);
+}
+
+
+offboard",No Syntax Error,,,,,
+"onboard
+   # made up formula para di na magsearch
+   captain(){
+      fleet celc = load(""enter celsius to convert: "");
+      fleet fahr = celc * 2 + 34;
+      fire(fahr);
+}",No Syntax Error,,,,,
+"onboard
+
+   bull isOdd(pint a){
+      theo(a % 2 == 0){
+       home(real);
+} alt {
+       home(usopp);
+}
+}
+
+   captain(){
+     pint n = load(""enter number: "");
+     bull odd = isOdd(n);
+     fire(odd);
+}
+offboard",No Syntax Error,,,,,
+"onboard
+loyal doffy name = ""John"";
+captain(){
+    fire(len(name));
+}
+
+offboard",No Syntax Error,,,,,
+"onboard
+   loyal pint target_year = 100;
+   captain(){
+      pint current_age = load(""how old are you: "");
+      pint years_til_100 = target_year - current_age;
+      fire(years_til_100);
+}
+offboard",No Syntax Error,,,,,
+"onboard
+   doffy vowels = [""a"", ""e"", ""i"", ""o"", ""u""];
+
+  
+void count_vowels(doffy str){
+    pint vowelCount = 0;
+    four(pint i = 0; i < len(str); i++){
+       four(pint j = 0; j < len(vowels); j++){
+          theo(str[i] == vowels[j]){
+             vowelCount++;
+             leak;
+          }
+       }
+    }
+    fire(vowelCount);
+}
+captain(){
+    doffy prompt = ""enter sentence: "";
+    doffy str = load(prompt);
+    count_vowels(str);
+}
+offboard",No Syntax Error,,,,,
+"onboard
+   captain(){
+     pint a = load(""enter first number""), b = load(""enter second number"");
+     fire(`the product of {a} and {b} is {a * b}`);
+}
+offboard",No Syntax Error,,,,,
+"onboard
+   captain(){
+      whale(real){
+         pint number = load(""enter number: "");
+         theo(number < 0){
+            leak;
+         }
+      }
+}
+offboard",No Syntax Error,,,,,
+"onboard
+   captain(){
+     four(pint i = 1; i <= 20; i++){
+      theo(i % 2 == 0){
+        fire(i);
+}
+}
+     
+}
+offboard",No Syntax Error,,,,,
+"onboard
+
+captain(){
+   pint n = load(""enter number to factorial"");
+   pint factorial = 1;	
+   four(pint i = n; i > 0; i--){
+           factorial = factorial * i;
+}
+   fire(factorial);
+}
+
+offboard",No Syntax Error,,,,,
+"onboard
+
+pint arr = [1,2,3,4,5];
+
+captain(){
+   pint sum = 0;
+   four(pint i = 0; i < len(arr); i++){
+      sum = sum + arr[i];
+}
+   fire(sum);
+}
+
+offboard",No Syntax Error,,,,,
+"onboard
+pint arr = [1,5,3,2,6,2];
+captain(){
+   pint max = 0;
+   four(pint i = 0; i < len(arr); i++){
+     theo(arr[i] > max){
+       max = arr[i];
+}
+}
+   fire(max);
+}
+
+offboard",No Syntax Error,,,,,
+"onboard
+   doffy vowels = [""a"", ""e"", ""i"", ""o"", ""u""];
+
+
+
+void count_vowels(doffy str){
+    pint vowelCount = 0;
+    four(pint i = 0; i < len(str); i++){
+       four(pint j = 0; j < len(vowels); j++){
+          theo(str[i] == vowels[j]){
+             vowelCount++;
+             leak;
+          }
+       }
+    }
+    fire(vowelCount);
+}
+captain(){
+    doffy prompt = ""enter sentence: "";
+    doffy str = load(prompt);
+    count_vowels(str);
+}
+
+offboard
+
+",No Syntax Error,,,,,
+"onboard
+
+pint arr = [1,2,3] + [4];
+pint arr2 = arr + [5];
+
+captain(){
+   fire(arr2);
+}
+
+offboard",No Syntax Error,,,,,
